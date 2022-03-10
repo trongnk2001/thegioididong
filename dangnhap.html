@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+    <link rel="stylesheet" href="assets/css/dangnhap.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-login">
+            <h1>Đăng nhập</h1>
+            <div class="form-text">
+                <label>Username</label>
+                <input type="text" id="username">
+            </div>
+            <div class="form-text">
+                <label>Password</label>
+                <input type="password" id="password">
+            </div>
+            <button onclick="return validate()">Đăng nhập</button>
+            <span>Bạn chưa có tài khoản ? Đăng kí <a href="dangki.html">Tại đây</a></span>
+        </div>
+    </div>
+    <script>
+        const formLogin = document.querySelectorAll('.form-text input');
+        const formLabel = document.querySelectorAll('.form-text label');
+        for(let i =0; i<2; i++){
+            formLogin[i].addEventListener("mouseover",function(){
+                formLabel[i].classList.add("focus");
+            })
+            formLogin[i].addEventListener("mouseout",function(){
+                if(formLogin[i].value ==""){
+                formLabel[i].classList.remove("focus");
+                }
+            })
+        }
+    </script>
+    <script>
+        //lấy giá trị
+        function getValue(id){
+            return document.getElementById(id).value.trim();
+        }
+        //Hiển thị lỗi
+        function showError(key,mess){
+            document.getElementById(key + '_error').innerHTML=mess;
+        }
+        function validate(){
+            let value1=0;value2=0;
+            var username = getValue('username');
+                if (username == '' || username.length < 5 || !/^[a-zA-Z0-9]+$/.test(username)){
+                    value1 = -1;
+                    showError('username', 'Vui lòng kiểm tra lại Username');
+                    return value1;
+                }
+                var password = getValue('password');
+                if (password == '' || password.length < 8 ){
+                    value2 = -1;
+                    showError('password', 'Vui lòng kiểm tra lại Password');
+                    return value2;
+                }
+            if(value1 == 0 && value2 == 0){
+                alert('Đăng nhập thành công');
+                confirm('Tài khoản bạn vừa đăng nhập là :\n'+"Username : "+ username +"\nPassword : "+ password)
+                setTimeout(function(){
+                    window.location="http://127.0.0.1:5500/index.html";
+                }, 500);
+            }
+        }
+    </script>
+</body>
+</html>

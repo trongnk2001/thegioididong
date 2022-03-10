@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TĐT Mobile</title>
+    <link rel="stylesheet" href="./assets/css/chitietsp-tablet.css">
+    <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
+    <link rel='stylesheet prefetch' href='https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css'>
+</head>
+<body>
+        <div id="header">
+            <ul id="nav">
+                <li><a href="danhmuc-dienthoai.html">
+                    <i class="dt ti-mobile"></i>
+                    Điện thoại
+                </a></li>
+                <li><a href="danhmuc-laptop.html">
+                    <i class="lt ti-desktop"></i>
+                    Laptop
+                </a></li>
+                <li>
+                    <a href="danhmuc-phukien.html">
+                        <i class="ti-headphone"></i>
+                        Phụ kiện
+                        <i class="ti-angle-down"></i>
+                    </a>
+                    <ul class="subnav">
+                        <li id="PK1">Phụ kiện di động
+                          <ul class="PKDD" style="font-weight: normal;list-style-type: none;text-transform: none;">
+                              <li><a href=""><h3>Pin sạc dự phòng</h3></a></li>
+                              <li><a href=""><h3>Sạc cáp</h3></a></li>
+                              <li><a href=""><h3>Miếng dán màn hình</h3></a></li>
+                              <li><a href=""><h3>Ốp lưng</h3></a></li>
+                              <li><a href=""><h3>Phụ kiện Ipad</h3></a></li>
+                              <li><a href=""><h3>Giá đỡ laptop,điện thoại</h3></a></li>
+                              <li><a href=""><h3>Túi đựng Airpods</h3></a></li>
+                          </ul>  
+                        </li>
+                        <li id="PK2">Phụ kiện laptop
+                            <ul class="PKLT" style="font-weight: normal;list-style-type: none;text-transform: none;">
+                               <li><a href=""><h3>Chuột máy tính</h3></a></li>  
+                               <li><a href=""><h3>Balo,túi chống sốc</h3></a></li>
+                               <li><a href=""><h3>Miếng lót bàn phím</h3></a></li>
+                               <li><a href=""><h3>Phần mềm</h3></a></li>   
+                            </ul>
+                        </li>
+                        <li id="PK3">Phụ kiện khác
+                            <ul class="PKK" style="font-weight: normal;list-style-type: none;text-transform: none;">
+                                <li><a href=""><h3>Thiết bị mạng</h3></a></li>
+                                <li><a href=""><h3>Camera giám sát, hành trình</h3></a></li>
+                                <li><a href=""><h3>Máy tính cầm tay</h3></a></li>
+                                <li><a href=""><h3>Thiết bị thông minh</h3></a></li>
+                                <li><a href=""><h3>Gậy tự sướng</h3></a></li>
+                                <li><a href=""><h3>Túi chống nước</h3></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="danhmuc-tablet.html">
+                    <i class="ti-tablet"></i>
+                    Tablet
+                </a></li>
+                <li><a href="dangnhap.html">
+                    Đăng nhập
+                    <i class="ti-user"></i>
+                </a></li>
+                <li><a href="dangki.html">
+                    Đăng kí
+                    <i class="ti-import"></i>
+                </a></li>
+            </ul>
+        </div>
+        <!-- KẾT THÚC HEADER -->
+        
+        
+        <div id="main">
+            <div class="chitrang">
+                <ul>
+                    <li><a href="">Máy tính bảng</a></li>
+                    <li>
+                        <span>›</span>
+                        <a href="">Máy tính bảng Huawei</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="chitrang2">
+                    <h1>Máy tính bảng Huawei MatePad T10s (Nền tảng Huawei Mobile Service)</h1>
+                    <img src="./assets/img/chitietsp-dienthoai/chitrang-h1-right/sao.PNG" alt="">
+                    <p>
+                        80
+                        <span>đánh giá</span>
+                    </p>    
+            </div>
+            <hr style="width: 1200px;margin-left:160px;margin-top:10px;">    
+            <div id="box-main">
+                    <div class="slider-box-main">
+                        <img id="img" onclick="changeImage()" src="assets/img/chitietsp-tablet/box-main/1.jpg" alt="">
+                        <script>
+                            var index = 1;
+                           changeImage = function() {
+                               var imgs = ["assets/img/chitietsp-tablet/box-main/1.jpg","assets/img/chitietsp-tablet/box-main/2.jpg",
+                                            "assets/img/chitietsp-tablet/box-main/3.jpg","assets/img/chitietsp-tablet/box-main/onclick1.jpg",
+                                            "assets/img/chitietsp-tablet/box-main/onclick2.jpg"]
+                               document.getElementById('img').src = imgs[index];
+                               index++;
+                               if(index==5)
+                               {
+                                   index = 0;
+                               }
+                           }
+                           setInterval(changeImage,2000);
+                        </script>
+                        <div class="list-img">
+                            <ul>
+                                <li>
+                                    <img onclick="changeImageSmall('one')" id="one" src="./assets/img/chitietsp-tablet/box-main/onclick1.jpg" alt="">
+                                    <p >Trước</p>
+                                </li>
+                                <li>
+                                    <img onclick="changeImageSmall('two')" id="two" src="./assets/img/chitietsp-tablet/box-main/onclick2.jpg" alt="">
+                                    <p >Sau</p>
+                                </li>
+                            </ul>
+                            <script>
+                                function changeImageSmall(id){
+                                    let imagePath = document.getElementById(id).getAttribute('src');
+                                    // let imageMain = imgs[6].getAttribute('assets/img/chitietsp-dienthoai/box-main/onclick1.jpg');
+                                    document.getElementById('img').setAttribute('src',imagePath);
+                                }
+                            </script>
+                        </div>
+                    </div>
+
+                <div class="right-box-main">
+                    <!-- <div class="top-right-box-main">
+                        <a style="border-color:#288ad6" href="">S21+ 5G 256GB </a>
+                        <a href="">S21 5G 128GB</a>
+                        <a href="">S21+ 5G 128GB</a>
+                    </div> -->
+                    <div class="main-right-box-main">
+                        <div class="giatai">
+                             Giá tại
+                             <span style="color:#288ad6">TĐT Mobile</span> 
+                        </div>
+                        <div class="giatien">
+                            <p class="giamgia">5.140.000₫ </p>
+                            <p class="giagoc">5.490.000₫</p> 
+                            <p class="giamgia">-6%</p> 
+                        </div>
+                        <div class="thoigian-khuyenmai">
+                            <i class="khuyenmai-i">Giá và khuyến mãi dự kiến áp dụng đến 23:00 30/06</i>
+                        </div>
+                        <div class="conhang">
+                            <span>CÒN HÀNG</span>
+                        </div>
+                        <div class="diachi">
+                            <p>
+                                <a href=""><i class="ti-tag"></i> Chọn địa chỉ nhận hàng</a>
+                                để biết thời gian giao.
+                            </p>
+                        </div>
+                        <div class="diachi">
+                            <a href="" style="margin-left: 2px;"><i class="ti-shopping-cart-full"></i>  Xem siêu thị có hàng</a>
+                        </div>
+                        <!-- <div class="anh">
+                            <div class="muaonline">
+                                <p class="muaonline1">
+                                    MUA ONLINE GIẢM SỐC
+                                    <span class="span2">900.000₫</span>
+                                    CÒN
+                                </p>
+                            </div>
+                            <div class="giamgia">
+                                <p class="muaonline2">17.090.000₫</p>
+                            </div> -->
+                            <div class="muahang">
+                                <div class="muangay">
+                                    <a style="text-decoration: none;color: #000;" href="">MUA NGAY</a>
+                                </div>
+                                <div class="muahang2">
+                                    <p>
+                                        Gọi đặt mua 
+                                        <a href="">1800.8888</a>
+                                        (7:30 - 22:00)
+                                    </p>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="khuyenmai">
+                            <div class="khuyenmai-top">
+                                <p class="khuyenmai-p"> 1 ưu đãi thêm</p>
+                            </div>
+                            <div class="khuyenmai-content">
+                                <div class="khuyenmai1">
+                                    <span class="span1">1</span>
+                                    <p class="p1">Mã giảm  
+                                        <strong>20% tối đa 100.000đ</strong>
+                                    </p>
+                                </div>
+                                <div class="khuyenmai1">
+                                    <span class="span1">2</span>
+                                    <p class="p1"> 5 lần  
+                                        <strong>FREEship</strong>
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- <div class="muahang">
+                                <div class="muangay">
+                                    <a style="text-decoration: none;color: #000;" href="">MUA NGAY</a>
+                                </div>
+                                <div class="muahang2">
+                                    <div class="muatragop">
+                                        <a href="">                         
+                                            MUA TRẢ GÓP 0%
+                                        </a>
+                                    </div>
+                                    <div class="muaquathe">
+                                        <a href="">
+                                            TRẢ GÓP QUA THẺ
+                                        </a>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    <!-- BẮT ĐẦU FOOTER -->
+        <hr style="width: 1200px;margin-left:160px;margin-top:10px;margin-top: 50px;
+        margin-bottom: 10px;">
+        <div id="footer">
+            <div class="footer-main">
+                <div class="footer-main-1">
+                    <ul>
+                        <li>
+                        <a href="">Lịch sử mua hàng</a>
+                        </li>
+                        <li>
+                        <a href="">Cộng tác bán hàng cùng ADMIN</a>
+                        </li>
+                        <li>
+                        <a href="">Tìm hiểu về mua trả góp</a>
+                        </li>
+                        <li>
+                        <a href="">Chính sách bảo hành</a>
+                        </li>
+                        <li>
+                        <a href="">Xem thêm</a>
+                        </li>
+                    </ul>   
+                </div>
+                <div class="footer-main-1">
+                    <ul>
+                        <li>
+                        <a href="">Giới thiệu công ty (MWG.vn)</a>
+                        </li>
+                        <li>
+                        <a href="">Tuyển dụng</a>
+                        </li>
+                        <li>
+                        <a href="">Gửi góp ý, khiếu nại</a>
+                        </li>
+                        <li>
+                        <a href="">Tìm siêu thị (2.574 shop)</a>
+                        </li>
+                        <li>
+                        <a href="">Xem bản mobile</a>
+                        </li>
+                    </ul> 
+                </div>
+                <div class="footer-main-2">
+                    <p style="margin-top: 10px;">
+                        <strong>Tổng đài hỗ trợ</strong>
+                        (Miễn phí gọi)
+                    </p>
+                    <p>
+                        <span>Gọi mua:</span>
+                        <a href=""><b>1800.1060</b></a>
+                        (7:30 - 22:00)
+                    </p>
+                    <p>
+                        <span>Kỹ thuật:</span>
+                        <a href=""><b>1800.1763</b></a>
+                        (7:30 - 22:00)
+                    </p>
+                    <p>
+                        <span>Khiếu nại:</span>
+                        <a href=""><b>1800.1062</b></a>
+                        (8:00 - 21:30)
+                    </p>
+                    <p>
+                        <span>Bảo hành:</span>
+                        <a href=""><b>1800.1064</b></a>
+                        (8:00 - 21:00)
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    
+</div> <!-- KẾT THÚC THẺ MAIN  -->
+    
+</body>

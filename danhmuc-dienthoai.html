@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/danhmuc-dienthoai.css">
+    <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <ul id="nav">
+                <li style="background-color: #fff;"><a href="">
+                    <i class="dt ti-mobile"></i>
+                    Điện thoại
+                </a></li>
+                <li><a href="danhmuc-laptop.html">
+                    <i class="lt ti-desktop"></i>
+                    Laptop
+                </a></li>
+                <li>
+                    <a href="danhmuc-phukien.html">
+                        <i class="ti-headphone"></i>
+                        Phụ kiện
+                        <i class="ti-angle-down"></i>
+                    </a>
+                    <ul class="subnav">
+                        <li id="PK1">Phụ kiện di động
+                          <ul class="PKDD" style="font-weight: normal;list-style-type: none;text-transform: none;">
+                              <li><a href=""><h3>Pin sạc dự phòng</h3></a></li>
+                              <li><a href=""><h3>Sạc cáp</h3></a></li>
+                              <li><a href=""><h3>Miếng dán màn hình</h3></a></li>
+                              <li><a href=""><h3>Ốp lưng</h3></a></li>
+                              <li><a href=""><h3>Phụ kiện Ipad</h3></a></li>
+                              <li><a href=""><h3>Giá đỡ laptop,điện thoại</h3></a></li>
+                              <li><a href=""><h3>Túi đựng Airpods</h3></a></li>
+                          </ul>  
+                        </li>
+                        <li id="PK2">Phụ kiện laptop
+                            <ul class="PKLT" style="font-weight: normal;list-style-type: none;text-transform: none;">
+                               <li><a href=""><h3>Chuột máy tính</h3></a></li>  
+                               <li><a href=""><h3>Balo,túi chống sốc</h3></a></li>
+                               <li><a href=""><h3>Miếng lót bàn phím</h3></a></li>
+                               <li><a href=""><h3>Phần mềm</h3></a></li>   
+                            </ul>
+                        </li>
+                        <li id="PK3">Phụ kiện khác
+                            <ul class="PKK" style="font-weight: normal;list-style-type: none;text-transform: none;">
+                                <li><a href=""><h3>Thiết bị mạng</h3></a></li>
+                                <li><a href=""><h3>Camera giám sát, hành trình</h3></a></li>
+                                <li><a href=""><h3>Máy tính cầm tay</h3></a></li>
+                                <li><a href=""><h3>Thiết bị thông minh</h3></a></li>
+                                <li><a href=""><h3>Gậy tự sướng</h3></a></li>
+                                <li><a href=""><h3>Túi chống nước</h3></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="danhmuc-tablet.html">
+                    <i class="ti-tablet"></i>
+                    Tablet
+                </a></li>
+                <li><a href="dangnhap.html">
+                    Đăng nhập
+                    <i class="ti-user"></i>
+                </a></li>
+                <li><a href="dangki.html">
+                    Đăng kí
+                    <i class="ti-import"></i>
+                </a></li>
+            </ul>
+        </div>
+        <div id="banner">
+            <div class="banner-left">
+                <img id="img" onclick="changeImage()" src="assets/img/danhmuc-dienthoai/banner/banner-left/1.png" alt="">
+                        <script>
+                            var index = 1;
+                           changeImage = function() {
+                               var imgs = ["assets/img/danhmuc-dienthoai/banner/banner-left/1.png","assets/img/danhmuc-dienthoai/banner/banner-left/2.png",
+                                            "assets/img/danhmuc-dienthoai/banner/banner-left/3.png","assets/img/danhmuc-dienthoai/banner/banner-left/4.png"]
+                               document.getElementById('img').src = imgs[index];
+                               index++;
+                               if(index==4)
+                               {
+                                   index = 0;
+                               }
+                           }
+                           setInterval(changeImage,1500);
+                        </script>
+            </div>
+            <div class="banner-right">
+                <div class="banner-right-top">
+                    <img src="./assets/img/danhmuc-dienthoai/banner/banner-right/euro-m51-390-97-390x97.png" alt="">
+                </div>
+                <div class="banner-right-bottom">
+                    <img src="./assets/img/danhmuc-dienthoai/banner/banner-right/sticky-A15-15s-390-97-390x97.png" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- KẾT THÚC BANNER -->
+        <div id="phanloai">
+            <div class="demuc">
+                <div class="demuc1">
+                    <i class="ti-filter"></i>
+                    Bộ lọc
+                </div>
+                <div class="demuc1">
+                    Hãng
+                    <i class="ti-angle-down"></i>
+                </div>
+                <div class="demuc1">
+                    Giá
+                    <i class="ti-angle-down"></i>
+                </div>
+                <div class="demuc1">
+                    Loại điện thoại
+                    <i class="ti-angle-down"></i>
+                </div>
+                <div class="demuc1">
+                    Hiệu năng & Pin
+                    <i class="ti-angle-down"></i>
+                </div>
+                <div class="demuc1">
+                    RAM
+                    <i class="ti-angle-down"></i>
+                </div>
+                <div class="demuc1">
+                    Bộ nhớ trong 
+                    <i class="ti-angle-down"></i>
+                </div>
+                <div class="demuc1">
+                    Camera
+                    <i class="ti-angle-down"></i>
+                </div>
+                <div class="demuc1">
+                    Tính năng đặc biệt
+                    <i class="ti-angle-down"></i>
+                </div>
+                <div class="demuc1">
+                    Thiết kế
+                    <i class="ti-angle-down"></i>
+                </div>
+                <div class="demuc1">
+                    Màn hình 
+                    <i class="ti-angle-down"></i>
+                </div>
+            </div>
+            <div class="hang">
+                <div class="hang-tren">
+                    <a href="" >
+                        <img src="./assets/img/danhmuc-dienthoai/phanloai/1.jpg" alt="">
+                    </a>
+                    <a href="" >
+                        <img src="./assets/img/danhmuc-dienthoai/phanloai/2.jpg" alt="">
+                    </a>
+                    <a href="" >
+                        <img src="./assets/img/danhmuc-dienthoai/phanloai/3.jpg" alt="">
+                    </a>
+                    <a href="" >
+                        <img src="./assets/img/danhmuc-dienthoai/phanloai/4.jpg" alt="">
+                    </a>
+                    <a href="" >
+                        <img src="./assets/img/danhmuc-dienthoai/phanloai/5.png" alt="">
+                    </a>
+                    <a href="" >
+                        <img src="./assets/img/danhmuc-dienthoai/phanloai/6.png" alt="">
+                    </a>
+                    <a href="" >
+                        <img src="./assets/img/danhmuc-dienthoai/phanloai/7.png" alt="">
+                    </a>
+                    <a href="" >
+                        <img src="./assets/img/danhmuc-dienthoai/phanloai/8.jpg" alt="">
+                    </a>
+                    <a href="" >
+                        <img src="./assets/img/danhmuc-dienthoai/phanloai/9.jpg" alt="">
+                    </a>
+                </div>
+                <div class="hang-duoi">
+                    <a href="" >
+                        <img src="./assets/img/danhmuc-dienthoai/phanloai/10.jpg" alt="">
+                    </a>
+                    <a href="" >
+                        <img src="./assets/img/danhmuc-dienthoai/phanloai/11.jpg" alt="">
+                    </a>
+                    <a href="" >
+                        <img src="./assets/img/danhmuc-dienthoai/phanloai/12.png" alt="">
+                    </a>
+                    <a href="" >
+                        <img src="./assets/img/danhmuc-dienthoai/phanloai/13.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- KẾT THÚC BANNER -->
+
+        <div id="box-common">
+            <div class="box-common__main">
+                <div class="listproduct">
+                    <div class="listproduct1">
+                        <img src="assets/img/Điện thoại/samsung-galaxy-s21-tim-600x600.jpg" alt="">
+                        <a href="chitietsp-dienthoai.html">Samsung Galaxy S21 5G</a>
+                        <h4 style="margin-top: 6px;">Online giá rẻ</h4>
+                        <strong>14.990.000₫</strong>
+                        <h4 style="font-size: 15px;text-decoration: line-through;">20.990.000₫ 
+                        <span style="display: inline-block;"> -28%</span></h4>
+                    </div>
+                    <div class="listproduct1">
+                        <img src="assets/img/Điện thoại/iphone-12-xanh-duong-600x600.jpg" alt="">
+                        <a href="">iPhone 12 64GB</a>
+                        <h4 style="margin-top: 6px;">Online giá rẻ</h4>
+                        <strong>20.390.000₫</strong>
+                        <h4 style="font-size: 15px;text-decoration: line-through;">23.490.000₫ 
+                        <span style="display: inline-block;"> -13%</span></h4>
+                    </div>
+                    <div class="listproduct1">
+                        <img src="assets/img/Điện thoại/xiaomi-redmi-note-10-5g-xanh-bong-dem-1-600x600.jpg" alt="">
+                        <a href="">Xiaomi Redmi Note 10 5G </a>
+                        <h4 style="margin-top: 6px;">Online giá rẻ</h4>
+                        <strong>5.690.000₫</strong>
+                        <h4 style="font-size: 15px;text-decoration: line-through;">5.990.000₫ 
+                        <span style="display: inline-block;"> -5%</span></h4>
+                    </div>
+                    <div class="listproduct1">
+                        <img src="assets/img/Điện thoại/oppo-a93-den-14-600x600.jpg" alt="">
+                        <a href="">OPPO A93</a>
+                        <h4 style="margin-top: 6px;">Online giá rẻ</h4>
+                        <strong>5.990.000₫</strong>
+                        <h4 style="font-size: 15px;text-decoration: line-through;">6.490.000₫ 
+                        <span style="display: inline-block;"> -7%</span></h4>
+                    </div>
+                    <div class="listproduct1">
+                        <img src="assets/img/Điện thoại/samsung-galaxy-a02-xanhduong-600x600-600x600.jpg" alt="">
+                        <a href="">Samsung Galaxy A02</a>
+                        <h4 style="margin-top: 6px;">Online giá rẻ</h4>
+                        <strong>1.990.000₫</strong>
+                        <h4 style="font-size: 15px;text-decoration: line-through;">2.590.000₫ 
+                        <span style="display: inline-block;"> -13%</span></h4>
+                    </div>
+                </div>
+                <div class="listproduct2">
+                    <div class="listproduct1">
+                        <img src="assets/img/Điện thoại/oppo-reno5-trang-600x600-1-600x600.jpg" alt="">
+                        <a href="">OPPO Reno5</a>
+                        <h4 style="margin-top: 6px;">Online giá rẻ</h4>
+                        <strong>8,255,500₫</strong>
+                        <h4 style="font-size: 15px;text-decoration: line-through;">8.690.000₫ 
+                        <span style="display: inline-block;"> -5%</span></h4>
+                    </div>
+                    <div class="listproduct1">
+                        <img src="assets/img/Điện thoại/iphone-xi-do-600x600.jpg" alt="">
+                        <a href="">iPhone 11 64GB</a>
+                        <h4 style="margin-top: 6px;">Online giá rẻ</h4>
+                        <strong>17.490.000₫</strong>
+                        <h4 style="font-size: 15px;text-decoration: line-through;">18.990.000₫ 
+                        <span style="display: inline-block;"> -7%</span></h4>
+                    </div>
+                    <div class="listproduct1">
+                        <img src="assets/img/Điện thoại/vivo-y51-bac-600x600-600x600.jpg" alt="">
+                        <a href="">Vivo Y51 (2020)</a>
+                        <h4 style="margin-top: 6px;">Online giá rẻ</h4>
+                        <strong>5.790.000₫</strong>
+                        <h4 style="font-size: 15px;text-decoration: line-through;">6.290.000₫ 
+                        <span style="display: inline-block;"> -7%</span></h4>
+                    </div>
+                    <div class="listproduct1">
+                        <img src="assets/img/Điện thoại/realme-c12-do-13-600x600.jpg" alt="">
+                        <a href="">Realme C12</a>
+                        <h4 style="margin-top: 6px;">Online giá rẻ</h4>
+                        <strong>3.290.000₫</strong>
+                        <h4 style="font-size: 15px;text-decoration: line-through;">3.490.000₫ 
+                        <span style="display: inline-block;"> -5%</span></h4>
+                    </div>
+                    <div class="listproduct1">
+                        <img src="assets/img/Điện thoại/samsung-galaxy-m51-trang-new-600x600-600x600.jpg" alt="">
+                        <a href="">Samsung Galaxy M51</a>
+                        <h4 style="margin-top: 6px;">Online giá rẻ</h4>
+                        <strong>8.490.000₫</strong>
+                        <h4 style="font-size: 15px;text-decoration: line-through;">9.490.000₫ 
+                        <span style="display: inline-block;"> -10%</span></h4>
+                    </div>
+                </div>
+
+                <div class="listproduct2">
+                    <div class="listproduct1">
+                        <img src="assets/img/danhmuc-dienthoai/content/oppo-reno5-marvel.jpg" alt="">
+                        <a href="">OPPO Reno5 Marvel</a>
+                        <h4 style="margin-top: 6px;">Chỉ bán Online</h4>
+                        <strong>8.230.000₫ </strong>
+                        <h4 style="font-size: 15px;text-decoration: line-through;">9.690.000₫
+                        <span style="display: inline-block;"> -15%</span></h4>
+                    </div>
+                    <div class="listproduct1">
+                        <img src="assets/img/danhmuc-dienthoai/content/samsung-galaxy-z-fold-2.jpg" alt="">
+                        <a href=""> Samsung Galaxy Z Fold2 5G</a>
+                        <h4 style="margin-top: 6px;">Online giá rẻ</h4>
+                        <strong>50.000.000₫</strong> 
+                        <br>
+                        <span style="margin-left: 8px;"> Quà 9.990.000₫</span></h4>
+                    </div>
+                    <div class="listproduct1">
+                        <img src="assets/img/danhmuc-dienthoai/content/samsung-galaxy-z-fold-2-dacbiet.jpg" alt="">
+                        <a href="">Samsung Galaxy S21 Ultra</a>
+                        <h4 style="margin-top: 6px;">Online giá rẻ</h4>
+                        <strong>25.990.000₫</strong>
+                        <h4 style="font-size: 15px;text-decoration: line-through;">30.990.000₫
+                        <span style="display: inline-block;"> -16%</span></h4>
+                    </div>
+                    <div class="listproduct1">
+                        <img src="assets/img/danhmuc-dienthoai/content/iphone12-1.jpg" alt="">
+                        <a href="">iPhone 12 Pro Max 512GB</a>
+                        <h4 style="margin-top: 6px;">Online giá rẻ</h4>
+                        <strong>41.490.000₫</strong>
+                        <h4 style="font-size: 15px;text-decoration: line-through;">42.990.000₫
+                        <span style="display: inline-block;"> -3%</span></h4>
+                    </div>
+                    <div class="listproduct1">
+                        <img src="assets/img/danhmuc-dienthoai/content/iphone-12-2.jpg" alt="">
+                        <a href="">iPhone 12 128GB</a>
+                        <h4 style="margin-top: 6px;">Online giá rẻ</h4>
+                        <strong>23.990.000₫</strong>
+                        <h4 style="font-size: 15px;text-decoration: line-through;">25.490.000₫
+                        <span style="display: inline-block;"> -5%</span></h4>
+                    </div>
+                </div>
+
+                <div class="listproduct2">
+                    <div class="listproduct1">
+                        <img src="assets/img/danhmuc-dienthoai/content/iphone-12-3.jpg" alt="">
+                        <a href="">Xiaomi Mi 11 5G</a>
+                        <h4 style="margin-top: 6px;">Online giá rẻ</h4>
+                        <strong>18.490.000₫</strong>
+                        <h4 style="font-size: 15px;text-decoration: line-through;">21.990.000₫
+                        <span style="display: inline-block;"> -15%</span></h4>
+                    </div>
+                    <div class="listproduct1">
+                        <img src="assets/img/Điện thoại/iphone-xi-do-600x600.jpg" alt="">
+                        <a href="">iPhone 11 64GB</a>
+                        <h4 style="margin-top: 6px;">Online giá rẻ</h4>
+                        <strong>17.490.000₫</strong>
+                        <h4 style="font-size: 15px;text-decoration: line-through;">18.990.000₫ 
+                        <span style="display: inline-block;"> -7%</span></h4>
+                    </div>
+                    <div class="listproduct1">
+                        <img src="assets/img/danhmuc-dienthoai/content/iphone-12-4.jpg" alt="">
+                        <a href="">iPhone 12 mini 64GB</a>
+                        <h4 style="margin-top: 6px;">Online giá rẻ</h4>
+                        <strong>16.990.000₫</strong>
+                        <h4 style="font-size: 15px;text-decoration: line-through;">19.490.000₫
+                        <span style="display: inline-block;"> -12%</span></h4>
+                    </div>
+                    <div class="listproduct1">
+                        <img src="assets/img/danhmuc-dienthoai/content/iphone-12-5.jpg" alt="">
+                        <a href="">Samsung Galaxy Note 20</a>
+                        <h4 style="margin-top: 6px;">Online giá rẻ</h4>
+                        <strong>15.990.000₫</strong>
+                        <h4 style="font-size: 15px;text-decoration: line-through;">23.990.000₫
+                        <span style="display: inline-block;"> -33%</span></h4>
+                    </div>
+                    <div class="listproduct1">
+                        <img src="assets/img/danhmuc-dienthoai/content/xiaomi-mi-10t-pro-den-600x600.jpg" alt="">
+                        <a href="">Xiaomi Mi 10T Pro 5G</a>
+                        <h4 style="margin-top: 6px;">Online giá rẻ</h4>
+                        <strong>12.490.000₫</strong>
+                        <h4 style="font-size: 15px;text-decoration: line-through;">12.990.000₫ 
+                        <span style="display: inline-block;"> -3%</span></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- KẾT THÚC CONTENT -->
+
+        <hr style="width: 1180px;margin-left:160px;margin-top:10px;margin-top: 320px;
+    margin-bottom: 10px;">
+    <div id="footer">
+        <div class="footer-main">
+            <div class="footer-main-1">
+                <ul>
+                    <li>
+                    <a href="">Lịch sử mua hàng</a>
+                    </li>
+                    <li>
+                    <a href="">Cộng tác bán hàng cùng ADMIN</a>
+                    </li>
+                    <li>
+                    <a href="">Tìm hiểu về mua trả góp</a>
+                    </li>
+                    <li>
+                    <a href="">Chính sách bảo hành</a>
+                    </li>
+                    <li>
+                    <a href="">Xem thêm</a>
+                    </li>
+                </ul>   
+            </div>
+            <div class="footer-main-1">
+                <ul>
+                    <li>
+                    <a href="">Giới thiệu công ty (MWG.vn)</a>
+                    </li>
+                    <li>
+                    <a href="">Tuyển dụng</a>
+                    </li>
+                    <li>
+                    <a href="">Gửi góp ý, khiếu nại</a>
+                    </li>
+                    <li>
+                    <a href="">Tìm siêu thị (2.574 shop)</a>
+                    </li>
+                    <li>
+                    <a href="">Xem bản mobile</a>
+                    </li>
+                </ul> 
+            </div>
+            <div class="footer-main-2">
+                <p style="margin-top: 10px;">
+                    <strong>Tổng đài hỗ trợ</strong>
+                    (Miễn phí gọi)
+                </p>
+                <p>
+                    <span>Gọi mua:</span>
+                    <a href=""><b>1800.1060</b></a>
+                    (7:30 - 22:00)
+                </p>
+                <p>
+                    <span>Kỹ thuật:</span>
+                    <a href=""><b>1800.1763</b></a>
+                    (7:30 - 22:00)
+                </p>
+                <p>
+                    <span>Khiếu nại:</span>
+                    <a href=""><b>1800.1062</b></a>
+                    (8:00 - 21:30)
+                </p>
+                <p>
+                    <span>Bảo hành:</span>
+                    <a href=""><b>1800.1064</b></a>
+                    (8:00 - 21:00)
+                </p>
+            </div>
+        </div>
+    </div>
+
+    </div>
+</body>
+</html>

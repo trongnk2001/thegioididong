@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/danhmuc-phukien.css">
+    <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
+    <link rel='stylesheet prefetch' href='https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css'>
+    <title>Document</title>
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <ul id="nav">
+                <li><a href="danhmuc-dienthoai.html">
+                    <i class="dt ti-mobile"></i>
+                    Điện thoại
+                </a></li>
+                <li><a href="danhmuc-laptop.html">
+                    <i class="lt ti-desktop"></i>
+                    Laptop
+                </a></li>
+                <li style="background-color: #fff;">
+                    <a href="">
+                        <i class="ti-headphone"></i>
+                        Phụ kiện
+                        <i class="ti-angle-down"></i>
+                    </a>
+                    <ul class="subnav">
+                        <li id="PK1">Phụ kiện di động
+                          <ul class="PKDD" style="font-weight: normal;list-style-type: none;text-transform: none;">
+                              <li><a href=""><h3>Pin sạc dự phòng</h3></a></li>
+                              <li><a href=""><h3>Sạc cáp</h3></a></li>
+                              <li><a href=""><h3>Miếng dán màn hình</h3></a></li>
+                              <li><a href=""><h3>Ốp lưng</h3></a></li>
+                              <li><a href=""><h3>Phụ kiện Ipad</h3></a></li>
+                              <li><a href=""><h3>Giá đỡ laptop,điện thoại</h3></a></li>
+                              <li><a href=""><h3>Túi đựng Airpods</h3></a></li>
+                          </ul>  
+                        </li>
+                        <li id="PK2">Phụ kiện laptop
+                            <ul class="PKLT" style="font-weight: normal;list-style-type: none;text-transform: none;">
+                               <li><a href=""><h3>Chuột máy tính</h3></a></li>  
+                               <li><a href=""><h3>Balo,túi chống sốc</h3></a></li>
+                               <li><a href=""><h3>Miếng lót bàn phím</h3></a></li>
+                               <li><a href=""><h3>Phần mềm</h3></a></li>   
+                            </ul>
+                        </li>
+                        <li id="PK3">Phụ kiện khác
+                            <ul class="PKK" style="font-weight: normal;list-style-type: none;text-transform: none;">
+                                <li><a href=""><h3>Thiết bị mạng</h3></a></li>
+                                <li><a href=""><h3>Camera giám sát, hành trình</h3></a></li>
+                                <li><a href=""><h3>Máy tính cầm tay</h3></a></li>
+                                <li><a href=""><h3>Thiết bị thông minh</h3></a></li>
+                                <li><a href=""><h3>Gậy tự sướng</h3></a></li>
+                                <li><a href=""><h3>Túi chống nước</h3></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="danhmuc-tablet.html">
+                    <i class="ti-tablet"></i>
+                    Tablet
+                </a></li>
+                <li><a href="dangnhap.html">
+                    Đăng nhập
+                    <i class="ti-user"></i>
+                </a></li>
+                <li><a href="dangki.html">
+                    Đăng kí
+                    <i class="ti-import"></i>
+                </a></li>
+            </ul>
+        </div>
+        <div id="banner">
+            <div class="banner-left">
+                <img id="img" onclick="changeImage()" src="assets/img/danhmuc-phukien/banner/banner-left/1.png" alt="">
+                        <script>
+                            var index = 1;
+                           changeImage = function() {
+                               var imgs = ["assets/img/danhmuc-phukien/banner/banner-left/1.png","assets/img/danhmuc-phukien/banner/banner-left/2.png",
+                                            "assets/img/danhmuc-phukien/banner/banner-left/3.png","assets/img/danhmuc-phukien/banner/banner-left/4.png"]
+                               document.getElementById('img').src = imgs[index];
+                               index++;
+                               if(index==4)
+                               {
+                                   index = 0;
+                               }
+                           }
+                           setInterval(changeImage,1500);
+                        </script>
+            </div>
+            <div class="banner-right">
+                <div class="banner-right-top">
+                    <img src="./assets/img/danhmuc-phukien/banner/banner-right/sticky-pk-390-97-390x97-1.png" alt="">
+                </div>
+                <div class="banner-right-bottom">
+                    <img src="./assets/img/danhmuc-phukien/banner/banner-right/sticky-pk-390-97-copy2-390x97.png" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- KẾT THÚC BANNER -->
+
+         <div id="phanloai">
+             <!--
+            <div class="demuc">
+                <div class="demuc1">
+                    <i class="ti-filter"></i>
+                    Bộ lọc
+                </div>
+                <div class="demuc1">
+                    Hãng
+                    <i class="ti-angle-down"></i>
+                </div>
+                <div class="demuc1">
+                    Giá
+                    <i class="ti-angle-down"></i>
+                </div>
+                <div class="demuc1">
+                    Loại điện thoại
+                    <i class="ti-angle-down"></i>
+                </div>
+                <div class="demuc1">
+                    Hiệu năng & Pin
+                    <i class="ti-angle-down"></i>
+                </div>
+                <div class="demuc1">
+                    RAM
+                    <i class="ti-angle-down"></i>
+                </div>
+                <div class="demuc1">
+                    Bộ nhớ trong 
+                    <i class="ti-angle-down"></i>
+                </div>
+                <div class="demuc1">
+                    Camera
+                    <i class="ti-angle-down"></i>
+                </div>
+                <div class="demuc1">
+                    Tính năng đặc biệt
+                    <i class="ti-angle-down"></i>
+                </div>
+                <div class="demuc1">
+                    Thiết kế
+                    <i class="ti-angle-down"></i>
+                </div>
+                <div class="demuc1">
+                    Màn hình 
+                    <i class="ti-angle-down"></i>
+                </div>
+            </div> -->
+            
+            <div class="hang">
+                <p>THƯƠNG HIỆU HÀNG ĐẦU</p>
+                <div class="hang-tren">
+                    <a href="" >
+                        <img src="./assets/img/danhmuc-phukien/phanloai/1.jpg" alt="">
+                    </a>
+                    <a href="" >
+                        <img src="./assets/img/danhmuc-phukien/phanloai/2.jpg" alt="">
+                    </a>
+                    <a href="" >
+                        <img src="./assets/img/danhmuc-phukien/phanloai/3.jpg" alt="">
+                    </a>
+                    <a href="" >
+                        <img src="./assets/img/danhmuc-phukien/phanloai/4.png" alt="">
+                    </a>
+                    <a href="" >
+                        <img src="./assets/img/danhmuc-phukien/phanloai/5.jpg" alt="">
+                    </a>
+                    <a href="" >
+                        <img src="./assets/img/danhmuc-phukien/phanloai/6.jpg" alt="">
+                    </a>
+                    <a href="" >
+                        <img src="./assets/img/danhmuc-phukien/phanloai/7.jpg" alt="">
+                    </a>
+                    <a href="" >
+                        <img src="./assets/img/danhmuc-phukien/phanloai/8.png" alt="">
+                    </a>
+                    <a href="" >
+                        <img src="./assets/img/danhmuc-phukien/phanloai/9.png" alt="">
+                    </a>
+                </div>
+                <!-- <div class="hang-duoi">
+                    <a href="" >
+                        <img src="./assets/img/danhmuc-dienthoai/phanloai/10.jpg" alt="">
+                    </a>
+                    <a href="" >
+                        <img src="./assets/img/danhmuc-dienthoai/phanloai/11.jpg" alt="">
+                    </a>
+                    <a href="" >
+                        <img src="./assets/img/danhmuc-dienthoai/phanloai/12.png" alt="">
+                    </a>
+                    <a href="" >
+                        <img src="./assets/img/danhmuc-dienthoai/phanloai/13.jpg" alt="">
+                    </a>
+                </div> -->
+            </div>
+        </div>
+        <!-- KẾT THÚC BANNER -->
+
+        <!-- BAT ĐẦU SAN SALE ONLINE -->
+        <div id="content">
+            <div class="top clearfix">
+                <p>Săn Sale Online Mỗi Ngày</p> 
+                </div>
+            <div class="bottom">
+                <div class="img1">
+                        <img src="assets/img/danhmuc-phukien/sansale/bluetooth-airpods-2-apple-mv7n2-imei-ava-600x600.jpg" alt="">
+                        <a href="">Tai nghe Bluetooth AirPods</a>
+                        <h4 style="margin-top: 6px;">Online giá rẻ</h4>
+                        <strong>3.411.000₫</strong>
+                        <h4 style="font-size: 15px;text-decoration: line-through;">3.790.000₫ 
+                        <span style="display: inline-block;"> -10%</span></h4>
+                        <div class="stars">
+                            <form action="">
+                              <input class="star star-5" id="star-5" type="radio" name="star"/>
+                              <label class="star star-5" for="star-5"></label>
+                              <input class="star star-4" id="star-4" type="radio" name="star"/>
+                              <label class="star star-4" for="star-4"></label>
+                              <input class="star star-3" id="star-3" type="radio" name="star"/>
+                              <label class="star star-3" for="star-3"></label>
+                              <input class="star star-2" id="star-2" type="radio" name="star"/>
+                              <label class="star star-2" for="star-2"></label>
+                              <input class="star star-1" id="star-1" type="radio" name="star"/>
+                              <label class="star star-1" for="star-1"></label>
+                            </form>
+                          </div>
+                </div>
+                <div class="img1">
+                    <img src="assets/img/danhmuc-phukien/sansale/bluetooth-tws-samsung-galaxy-bub-r175-ava-600x600.jpg" alt="">
+                    <a href="" >Tai nghe Bluetooth True</a>
+                    <h4 style="margin-top: 6px;">Online giá rẻ</h4>
+                    <strong>1.490.000₫</strong>
+                    <h4 style="font-size: 15px;text-decoration: line-through;">2.140.000₫
+                    <span style="display: inline-block;"> -30%</span></h4>
+                    <div class="stars">
+                        <form action="">
+                          <input class="star star-5" id="star-5" type="radio" name="star"/>
+                          <label class="star star-5" for="star-5"></label>
+                          <input class="star star-4" id="star-4" type="radio" name="star"/>
+                          <label class="star star-4" for="star-4"></label>
+                          <input class="star star-3" id="star-3" type="radio" name="star"/>
+                          <label class="star star-3" for="star-3"></label>
+                          <input class="star star-2" id="star-2" type="radio" name="star"/>
+                          <label class="star star-2" for="star-2"></label>
+                          <input class="star star-1" id="star-1" type="radio" name="star"/>
+                          <label class="star star-1" for="star-1"></label>
+                        </form>
+                      </div>
+                </div>
+                <div class="img1">
+                    <img src="assets/img/danhmuc-phukien/sansale/sac-du-phong-10000mah-lightning-evalu-pj-jp189sl-avatar-1-600x600.jpg" alt="">
+                    <a href="">Pin sạc dự phòng Polymer</a>
+                    <h4 style="margin-top: 6px;">Online giá rẻ</h4>
+                    <strong>360.000₫</strong>
+                    <h4 style="font-size: 15px;text-decoration: line-through;">600.000₫
+                    <span style="display: inline-block;"> -40%</span></h4>
+                    <div class="stars">
+                        <form action="">
+                          <input class="star star-5" id="star-5" type="radio" name="star"/>
+                          <label class="star star-5" for="star-5"></label>
+                          <input class="star star-4" id="star-4" type="radio" name="star"/>
+                          <label class="star star-4" for="star-4"></label>
+                          <input class="star star-3" id="star-3" type="radio" name="star"/>
+                          <label class="star star-3" for="star-3"></label>
+                          <input class="star star-2" id="star-2" type="radio" name="star"/>
+                          <label class="star star-2" for="star-2"></label>
+                          <input class="star star-1" id="star-1" type="radio" name="star"/>
+                          <label class="star star-1" for="star-1"></label>
+                        </form>
+                      </div>
+                </div>
+                <div class="img1">
+                    <img src="assets/img/danhmuc-phukien/sansale/chuot-khong-day-evalu-m806-01-600x600.jpg" alt="">
+                    <a href="">Chuột không dây eValu</a>
+                    <h4 style="margin-top: 6px;">Online giá rẻ</h4>
+                    <strong>100.000₫</strong>
+                    <h4 style="font-size: 15px;text-decoration: line-through;">127.000đ 
+                    <span style="display: inline-block;"> -20%</span></h4>
+                    <div class="stars">
+                        <form action="">
+                          <input class="star star-5" id="star-5" type="radio" name="star"/>
+                          <label class="star star-5" for="star-5"></label>
+                          <input class="star star-4" id="star-4" type="radio" name="star"/>
+                          <label class="star star-4" for="star-4"></label>
+                          <input class="star star-3" id="star-3" type="radio" name="star"/>
+                          <label class="star star-3" for="star-3"></label>
+                          <input class="star star-2" id="star-2" type="radio" name="star"/>
+                          <label class="star star-2" for="star-2"></label>
+                          <input class="star star-1" id="star-1" type="radio" name="star"/>
+                          <label class="star star-1" for="star-1"></label>
+                        </form>
+                      </div>
+                </div>
+                <div class="img1">
+                    <img src="assets/img/danhmuc-phukien/sansale/sac-du-phong-polymer-20000mah-type-c-xmobile-p69d-avatar-1-600x600.jpg" alt="">
+                    <a href="">Pin sạc dự phòng Polymer</a>
+                    <h4 style="margin-top: 4px;">Online giá rẻ</h4>
+                    <strong>630.000₫</strong>
+                    <h4 style="font-size: 15px;text-decoration: line-through;">1.050.000₫ 
+                    <span style="display: inline-block;"> -40%</span></h4>
+                    <div class="stars">
+                        <form action="">
+                          <input class="star star-5" id="star-5" type="radio" name="star"/>
+                          <label class="star star-5" for="star-5"></label>
+                          <input class="star star-4" id="star-4" type="radio" name="star"/>
+                          <label class="star star-4" for="star-4"></label>
+                          <input class="star star-3" id="star-3" type="radio" name="star"/>
+                          <label class="star star-3" for="star-3"></label>
+                          <input class="star star-2" id="star-2" type="radio" name="star"/>
+                          <label class="star star-2" for="star-2"></label>
+                          <input class="star star-1" id="star-1" type="radio" name="star"/>
+                          <label class="star star-1" for="star-1"></label>
+                        </form>
+                      </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="box-common">
+            <div class="phukiennoibat">
+                <p>
+                    PHỤ KIỆN NỔI BẬT
+                </p>
+            </div>
+            <div class="box-common__main">
+                <div class="listproduct">
+                    <div class="listproduct1">
+                        <img src="assets/img/Phụ kiện/sac-du-phong-polymer-10000mah-ava-pj-jp191s-avatar-1-600x600.jpg" alt="">
+                        <a href="chitietsp-phukien.html">Pin sạc dự phòng Polymer 10.000mAh AVA PJ JP191S</a>
+                        <h4 style="margin-top: 6px;">Online giá rẻ</h4>
+                        <strong>250.000₫</strong>
+                        <h4 style="font-size: 15px;text-decoration: line-through;">450.000₫
+                        <span style="display: inline-block;"> -44%</span></h4>
+                    </div>
+                    <div class="listproduct1">
+                        <img src="assets/img/Phụ kiện/pin-sac-du-phong-7500mah-ava-ds630-avatar-1-600x600.jpg" alt="">
+                        <a href="">Pin sạc dự phòng 7500mAh AVA DS630</a>
+                        <br>
+                        <h4 style="margin-top: 6px;">Online giá rẻ</h4>
+                        <strong>175.000₫</strong>
+                        <h4 style="font-size: 15px;text-decoration: line-through;">300.000₫ 
+                        <span style="display: inline-block;"> -41%</span></h4>
+                    </div>
+                    <div class="listproduct1">
+                        <img src="assets/img/Phụ kiện/pin-sac-du-phong-7500mah-ava-lj-jp195-avatar-1-600x600.jpg" alt="">
+                        <a href="">Pin sạc dự phòng 7.500mAh AVA LJ JP195</a>
+                        <br>
+                        <h4 style="margin-top: 6px;">Online giá rẻ</h4>
+                        <strong>175.000₫</strong>
+                        <h4 style="font-size: 15px;text-decoration: line-through;">300.000₫ 
+                        <span style="display: inline-block;"> -41%</span></h4>
+                    </div>
+                    <div class="listproduct1">
+                        <img src="assets/img/Phụ kiện/pin-sac-du-phong-10000mah-ava-ds003-wb-xanh-avatar-1-600x600.jpg" alt="">
+                        <a href="">Pin sạc dự phòng 10.000mAh AVA DS003-WB </a>
+                        <h4 style="margin-top: 6px;">Online giá rẻ</h4>
+                        <strong>210.000₫</strong>
+                        <h4 style="font-size: 15px;text-decoration: line-through;">400.000₫
+                        <span style="display: inline-block;"> -47%</span></h4>
+                    </div>
+                    <div class="listproduct1">
+                        <img src="assets/img/Phụ kiện/pin-sac-du-phong-10000mah-ava-la-y65-avatar-1-600x600.jpg" alt="">
+                        <a href="">Pin sạc dự phòng 10.000mAh AVA LA Y65</a>
+                        <h4 style="margin-top: 6px;">Online giá rẻ</h4>
+                        <strong>210.000₫</strong>
+                        <h4 style="font-size: 15px;text-decoration: line-through;">400.000₫ 
+                        <span style="display: inline-block;"> -47%</span></h4>
+                    </div>
+                </div>
+                <div class="listproduct2">
+                    <div class="listproduct1">
+                        <img src="assets/img/danhmuc-phukien/content/hang2/tai-nghe-ep-awei-q27hi-den-600x600.jpg" alt="">
+                        <a href="">Tai nghe EP Awei Q27Hi</a>
+                        <h4 style="margin-top: 6px;">Online giá rẻ</h4>
+                        <strong>105.000₫</strong>
+                        <h4 style="font-size: 15px;text-decoration: line-through;">150.000₫ 
+                        <span style="display: inline-block;"> -30%</span></h4>
+                    </div>
+                    <div class="listproduct1">
+                        <img src="assets/img/danhmuc-phukien/content/hang2/sac-du-phong-10000mah-type-c-powerslim-jp213-avatar-1-600x600-1-600x600.jpg" alt="">
+                        <a href="">Pin sạc dự phòng Polymer 10.000mAh</a>
+                        <h4 style="margin-top: 6px;">Online giá rẻ</h4>
+                        <strong>420.000₫</strong>
+                        <h4 style="font-size: 15px;text-decoration: line-through;">700.000₫ 
+                        <span style="display: inline-block;"> -40%</span></h4>
+                    </div>
+                    <div class="listproduct1">
+                        <img src="assets/img/danhmuc-phukien/content/hang2/tai-nghe-ep-mozard-ds510-wb-xanh-avatar-1-600x600-1-600x600.jpg" alt="">
+                        <a href="">Tai nghe EP Mozard DS510-WB Xanh</a>
+                        <h4 style="margin-top: 6px;">Online giá rẻ</h4>
+                        <strong>105.000₫</strong>
+                        <h4 style="font-size: 15px;text-decoration: line-through;">150.000₫ 
+                        <span style="display: inline-block;"> -30%</span></h4>
+                    </div>
+                    <div class="listproduct1">
+                        <img src="assets/img/danhmuc-phukien/content/hang2/pin-sac-du-phong-7500mah-ava-ds004-avatar-1-avt-1-600x600.jpg" alt="">
+                        <a href="">Pin sạc dự phòng 7500mAh AVA DS004</a>
+                        <h4 style="margin-top: 6px;">Online giá rẻ</h4>
+                        <strong>175.000₫</strong>
+                        <h4 style="font-size: 15px;text-decoration: line-through;">300.000₫ 
+                        <span style="display: inline-block;"> -41%</span></h4>
+                    </div>
+                    <div class="listproduct1">
+                        <img src="assets/img/danhmuc-phukien/content/hang2/tai-nghe-bluetooth-true-wireless-mozard-ts13-avatar-1-1-600x600.jpg" alt="">
+                        <a href="">Tai nghe Bluetooth True Wireless Mozard TS13</a>
+                        <h4 style="margin-top: 6px;">Online giá rẻ</h4>
+                        <strong>455.000₫</strong>
+                        <h4 style="font-size: 15px;text-decoration: line-through;">650.000₫ 
+                        <span style="display: inline-block;"> -30%</span></h4>
+                    </div>
+                </div>
+
+                <div class="listproduct2">
+                    <div class="listproduct1">
+                        <img src="assets/img/danhmuc-phukien/content/hang3/pin-sac-du-phong-10000mah-ava-la-y65-avatar-1-600x600.jpg" alt="">
+                        <a href="">Pin sạc dự phòng 10.000mAh AVA LA Y65</a>
+                        <h4 style="margin-top: 6px;">Chỉ bán Online</h4>
+                        <strong>210.000₫ </strong>
+                        <h4 style="font-size: 15px;text-decoration: line-through;">400.000₫
+                        <span style="display: inline-block;"> -47%</span></h4>
+                    </div>
+                    <div class="listproduct1">
+                        <img src="assets/img/danhmuc-phukien/content/hang3/sac-du-phong-polymer-10000mah-type-c-p66d-xam-avatar-1-600x600.jpg" alt="">
+                        <a href="">Pin sạc dự phòng không dây Polymer 10.000mAh</a>
+                        <h4 style="margin-top: 6px;">Online giá rẻ</h4>
+                        <strong>450.000₫</strong> 
+                        <h4 style="font-size: 15px;text-decoration: line-through;">750.000₫
+                        <span style="display: inline-block;"> -40%</span></h4>
+                    </div>
+                    <div class="listproduct1">
+                        <img src="assets/img/danhmuc-phukien/content/hang3/tai-nghe-ep-awei-q50hi-bac-600x600.jpg" alt="">
+                        <a href="">Tai nghe EP Awei Q50Hi Bạc</a>
+                        <h4 style="margin-top: 6px;">Online giá rẻ</h4>
+                        <strong>105.000₫</strong>
+                        <h4 style="font-size: 15px;text-decoration: line-through;">150.000₫
+                        <span style="display: inline-block;"> -30%</span></h4>
+                    </div>
+                    <div class="listproduct1">
+                        <img src="assets/img/danhmuc-phukien/content/hang3/hydrus-pj-jp196-ava-600x600.jpg" alt="">
+                        <a href="">Pin sạc dự phòng Polymer 10.000mAh</a>
+                        <h4 style="margin-top: 6px;">Online giá rẻ</h4>
+                        <strong>294.000₫</strong>
+                        <h4 style="font-size: 15px;text-decoration: line-through;">490.000₫
+                        <span style="display: inline-block;"> -40%</span></h4>
+                    </div>
+                    <div class="listproduct1">
+                        <img src="assets/img/danhmuc-phukien/content/hang3/sac-du-phong-polymer-10000mah-type-c-p66d-xam-avatar-1-600x600.jpg" alt="">
+                        <a href="">Pin sạc dự phòng Polymer 10.000mAh Type C </a>
+                        <h4 style="margin-top: 6px;">Online giá rẻ</h4>
+                        <strong>420.000₫</strong>
+                        <h4 style="font-size: 15px;text-decoration: line-through;">700.000₫
+                        <span style="display: inline-block;"> -40%</span></h4>
+                    </div>
+                </div>
+
+                <div class="listproduct2">
+                    <div class="listproduct1">
+                        <img src="assets/img/danhmuc-phukien/content/hang4/tai-nghe-ep-awei-q26hi-den-600x600.jpg" alt="">
+                        <a href="">Tai nghe EP Awei Q26Hi Đen</a>
+                        <h4 style="margin-top: 6px;">Online giá rẻ</h4>
+                        <strong>105.000₫</strong>
+                        <h4 style="font-size: 15px;text-decoration: line-through;">150.000₫
+                        <span style="display: inline-block;"> -30%</span></h4>
+                    </div>
+                    <div class="listproduct1">
+                        <img src="assets/img/danhmuc-phukien/content/hang4/10000mah-lightning-xmobile-lj-jp90s-nhom-xam-avatar-1-600x600.jpg" alt="">
+                        <a href="">Pin sạc dự phòng 10.000 mAh Lightning</a>
+                        <h4 style="margin-top: 6px;">Online giá rẻ</h4>
+                        <strong>420.000₫</strong>
+                        <h4 style="font-size: 15px;text-decoration: line-through;">700.000₫
+                        <span style="display: inline-block;"> -40%</span></h4>
+                    </div>
+                    <div class="listproduct1">
+                        <img src="assets/img/danhmuc-phukien/content/hang4/pin-sac-du-phong-10000mah-ava-ds003-wb-xanh-avatar-1-600x600.jpg" alt="">
+                        <a href="">Pin sạc dự phòng 10.000mAh AVA DS003-WB</a>
+                        <h4 style="margin-top: 6px;">Online giá rẻ</h4>
+                        <strong>210.000₫</strong>
+                        <h4 style="font-size: 15px;text-decoration: line-through;">400.000₫
+                        <span style="display: inline-block;"> -47%</span></h4>
+                    </div>
+                    <div class="listproduct1">
+                        <img src="assets/img/danhmuc-phukien/content/hang4/sac-du-phong-polymer-10000mah-ava-pj-jp191s-avatar-1-600x600.jpg" alt="">
+                        <a href="">Pin sạc dự phòng Polymer 10.000mAh AVA PJ JP191S</a>
+                        <h4 style="margin-top: 6px;">Online giá rẻ</h4>
+                        <strong>250.000₫</strong>
+                        <h4 style="font-size: 15px;text-decoration: line-through;">450.000₫
+                        <span style="display: inline-block;"> -44%</span></h4>
+                    </div>
+                    <div class="listproduct1">
+                        <img src="assets/img/danhmuc-phukien/content/hang4/bluetooth-tws-samsung-galaxy-bub-r175-ava-600x600.jpg" alt="">
+                        <a href="">Tai nghe Bluetooth True Wireless</a>
+                        <h4 style="margin-top: 6px;">Online giá rẻ</h4>
+                        <strong>1.490.000₫</strong>
+                        <h4 style="font-size: 15px;text-decoration: line-through;">2.140.000₫
+                        <span style="display: inline-block;"> -30%</span></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- KẾT THÚC CONTENT -->
+
+        <hr style="width: 1180px;margin-left:160px;margin-top:10px;margin-top: 40px">
+    <div id="footer">
+        <div class="footer-main">
+            <div class="footer-main-1">
+                <ul>
+                    <li>
+                    <a href="">Lịch sử mua hàng</a>
+                    </li>
+                    <li>
+                    <a href="">Cộng tác bán hàng cùng ADMIN</a>
+                    </li>
+                    <li>
+                    <a href="">Tìm hiểu về mua trả góp</a>
+                    </li>
+                    <li>
+                    <a href="">Chính sách bảo hành</a>
+                    </li>
+                    <li>
+                    <a href="">Xem thêm</a>
+                    </li>
+                </ul>   
+            </div>
+            <div class="footer-main-1">
+                <ul>
+                    <li>
+                    <a href="">Giới thiệu công ty (MWG.vn)</a>
+                    </li>
+                    <li>
+                    <a href="">Tuyển dụng</a>
+                    </li>
+                    <li>
+                    <a href="">Gửi góp ý, khiếu nại</a>
+                    </li>
+                    <li>
+                    <a href="">Tìm siêu thị (2.574 shop)</a>
+                    </li>
+                    <li>
+                    <a href="">Xem bản mobile</a>
+                    </li>
+                </ul> 
+            </div>
+            <div class="footer-main-2">
+                <p style="margin-top: 10px;">
+                    <strong>Tổng đài hỗ trợ</strong>
+                    (Miễn phí gọi)
+                </p>
+                <p>
+                    <span>Gọi mua:</span>
+                    <a href=""><b>1800.1060</b></a>
+                    (7:30 - 22:00)
+                </p>
+                <p>
+                    <span>Kỹ thuật:</span>
+                    <a href=""><b>1800.1763</b></a>
+                    (7:30 - 22:00)
+                </p>
+                <p>
+                    <span>Khiếu nại:</span>
+                    <a href=""><b>1800.1062</b></a>
+                    (8:00 - 21:30)
+                </p>
+                <p>
+                    <span>Bảo hành:</span>
+                    <a href=""><b>1800.1064</b></a>
+                    (8:00 - 21:00)
+                </p>
+            </div>
+        </div>
+    </div>
+
+    </div>
+</body>
+</html>

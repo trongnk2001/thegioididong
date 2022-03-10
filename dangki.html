@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng kí</title>
+    <link rel="stylesheet" href="assets/css/dangki.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-login">
+            <h1>Đăng kí</h1>
+            <div class="form-text">
+                <label>Email</label>
+                <input type="text" id="email">
+                <span id="email_error"></span>
+            </div>
+            <div class="form-text">
+                <label>Username</label>
+                <input type="text" id="username">
+                <span id="username_error"></span>
+            </div>
+            <div class="form-text">
+                <label>New password</label>
+                <input id="password" type="password">
+                <span id="password_error"></span>
+            </div>
+            <div class="form-text">
+                <label>Confirm password</label>
+                <input  id="repassword"  type="password" required>
+                <span id="repassword_error"></span>
+            </div>
+            <button onclick="return validate()">Đăng kí</button>
+            <span>Bạn đã có tài khoản ? Đăng nhập <a href="dangnhap.html">Tại đây</a></span>
+        </div>
+    </div>
+    <script>
+        const formLogin = document.querySelectorAll('.form-text input');
+        const formLabel = document.querySelectorAll('.form-text label');
+        for(let i =0; i<4; i++){
+            formLogin[i].addEventListener("mouseover",function(){
+                formLabel[i].classList.add("focus");
+            })
+            formLogin[i].addEventListener("mouseout",function(){
+                if(formLogin[i].value ==""){
+                formLabel[i].classList.remove("focus");
+                }
+            })
+        }
+    </script>
+    <script>
+        //Lấy giá trị 1 input
+        function getValue(id){
+            return document.getElementById(id).value.trim();
+        }
+        //Hiển thị lỗi
+        function showError(key,mess){
+            document.getElementById(key + '_error').innerHTML=mess;
+        }
+        function validate(){
+            let value1 = 0;value2=0;value3=0;
+                // email
+            var email = getValue('email');
+            var mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+                if(!mailformat.test(email)){
+                    value1 = -1;
+                    console.log('flag');
+                    showError('email','Vui lòng kiểm tra lại Email');
+                    return value1;
+                }
+                //username
+            var username = getValue('username');
+                if (username == '' || username.length < 5 || !/^[a-zA-Z0-9]+$/.test(username)){
+                    value2 = -1;
+                    showError('username', 'Vui lòng kiểm tra lại Username');
+                    return value2;
+                }
+                 //password
+            var password = getValue('password');
+            var repassword = getValue('repassword');
+                if (password == '' || password.length < 8 || password != repassword){
+                    value3 = -1;
+                    showError('repassword', 'Vui lòng kiểm tra lại Password');
+                    return value3;
+                }
+
+            if(value1 == 0 && value2 == 0 && value3 == 0){
+                alert('Đăng kí thành công');
+                confirm('Tài khoản bạn vừa đăng kí là :\n'+"Email : "+email +"\nUsername : "+ username +"\nPassword : "+ password)
+                setTimeout(function(){
+                    alert('Bạn sẽ được chuyển sang Đăng nhập sau 1s');
+                    window.location="http://127.0.0.1:5500/dangnhap.html";
+                }, 500);
+            }
+        }
+    </script>
+</body>
+</html>

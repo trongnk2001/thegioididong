@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/danhmuc-laptop.css">
+    <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <ul id="nav">
+                <li><a href="danhmuc-dienthoai.html">
+                    <i class="dt ti-mobile"></i>
+                    Điện thoại
+                </a></li>
+                <li style="background-color: #fff;"><a href="danhmuc-laptop.html">
+                    <i class="lt ti-desktop"></i>
+                    Laptop
+                </a></li>
+                <li>
+                    <a href="danhmuc-phukien.html">
+                        <i class="ti-headphone"></i>
+                        Phụ kiện
+                        <i class="ti-angle-down"></i>
+                    </a>
+                    <ul class="subnav">
+                        <li id="PK1">Phụ kiện di động
+                          <ul class="PKDD" style="font-weight: normal;list-style-type: none;text-transform: none;">
+                              <li><a href=""><h3>Pin sạc dự phòng</h3></a></li>
+                              <li><a href=""><h3>Sạc cáp</h3></a></li>
+                              <li><a href=""><h3>Miếng dán màn hình</h3></a></li>
+                              <li><a href=""><h3>Ốp lưng</h3></a></li>
+                              <li><a href=""><h3>Phụ kiện Ipad</h3></a></li>
+                              <li><a href=""><h3>Giá đỡ laptop,điện thoại</h3></a></li>
+                              <li><a href=""><h3>Túi đựng Airpods</h3></a></li>
+                          </ul>  
+                        </li>
+                        <li id="PK2">Phụ kiện laptop
+                            <ul class="PKLT" style="font-weight: normal;list-style-type: none;text-transform: none;">
+                               <li><a href=""><h3>Chuột máy tính</h3></a></li>  
+                               <li><a href=""><h3>Balo,túi chống sốc</h3></a></li>
+                               <li><a href=""><h3>Miếng lót bàn phím</h3></a></li>
+                               <li><a href=""><h3>Phần mềm</h3></a></li>   
+                            </ul>
+                        </li>
+                        <li id="PK3">Phụ kiện khác
+                            <ul class="PKK" style="font-weight: normal;list-style-type: none;text-transform: none;">
+                                <li><a href=""><h3>Thiết bị mạng</h3></a></li>
+                                <li><a href=""><h3>Camera giám sát, hành trình</h3></a></li>
+                                <li><a href=""><h3>Máy tính cầm tay</h3></a></li>
+                                <li><a href=""><h3>Thiết bị thông minh</h3></a></li>
+                                <li><a href=""><h3>Gậy tự sướng</h3></a></li>
+                                <li><a href=""><h3>Túi chống nước</h3></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="danhmuc-tablet.html">
+                    <i class="ti-tablet"></i>
+                    Tablet
+                </a></li>
+                <li><a href="dangnhap.html">
+                    Đăng nhập
+                    <i class="ti-user"></i>
+                </a></li>
+                <li><a href="dangki.html">
+                    Đăng kí
+                    <i class="ti-import"></i>
+                </a></li>
+            </ul>
+        </div>
+        <div id="banner">
+            <div class="banner-left">
+                <img id="img" onclick="changeImage()" src="assets/img/danhmuc-laptop/banner/banner-left/1.png" alt="">
+                        <script>
+                            var index = 1;
+                           changeImage = function() {
+                               var imgs = ["assets/img/danhmuc-laptop/banner/banner-left/1.png","assets/img/danhmuc-laptop/banner/banner-left/2.png",
+                                            "assets/img/danhmuc-laptop/banner/banner-left/3.png","assets/img/danhmuc-laptop/banner/banner-left/4.png"]
+                               document.getElementById('img').src = imgs[index];
+                               index++;
+                               if(index==4)
+                               {
+                                   index = 0;
+                               }
+                           }
+                           setInterval(changeImage,1500);
+                        </script>
+            </div>
+            <div class="banner-right">
+                <div class="banner-right-top">
+                    <img src="./assets/img/danhmuc-laptop/banner/banner-right/IntelArtboard-1-390x97.png" alt="">
+                </div>
+                <div class="banner-right-bottom">
+                    <img src="./assets/img/danhmuc-laptop/banner/banner-right/sticky-micro-390x97-1.png" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- KẾT THÚC BANNER -->
+        <div id="phanloai">
+            <div class="demuc">
+                <div class="demuc1">
+                    <i class="ti-filter"></i>
+                    Bộ lọc
+                </div>
+                <div class="demuc1">
+                    Hãng
+                    <i class="ti-angle-down"></i>
+                </div>
+                <div class="demuc1">
+                    Giá
+                    <i class="ti-angle-down"></i>
+                </div>
+                <div class="demuc1">
+                    Nhu cầu
+                    <i class="ti-angle-down"></i>
+                </div>
+                <div class="demuc1">
+                    Kích thước màn hình
+                    <i class="ti-angle-down"></i>
+                </div>
+                <div class="demuc1">
+                    CPU
+                    <i class="ti-angle-down"></i>
+                </div>
+                <div class="demuc1">
+                    RAM
+                    <i class="ti-angle-down"></i>
+                </div>
+                <div class="demuc1">
+                    Ổ cứng
+                    <i class="ti-angle-down"></i>
+                </div>
+                <div class="demuc1">
+                    Độ phân giải
+                    <i class="ti-angle-down"></i>
+                </div>
+                <div class="demuc1">
+                    Tính năng đặc biệt
+                    <i class="ti-angle-down"></i>
+                </div>
+            </div>
+            <div class="hang">
+                <div class="hang-tren">
+                    <a href="" >
+                        <img src="./assets/img/danhmuc-laptop/phanloai/1.png" alt="">
+                    </a>
+                    <a href="" >
+                        <img src="./assets/img/danhmuc-laptop/phanloai/2.png" alt="">
+                    </a>
+                    <a href="" >
+                        <img src="./assets/img/danhmuc-laptop/phanloai/3.png" alt="">
+                    </a>
+                    <a href="" >
+                        <img src="./assets/img/danhmuc-laptop/phanloai/4.png" alt="">
+                    </a>
+                    <a href="" >
+                        <img src="./assets/img/danhmuc-laptop/phanloai/5.png" alt="">
+                    </a>
+                    <a href="" >
+                        <img src="./assets/img/danhmuc-laptop/phanloai/6.png" alt="">
+                    </a>
+                    <a href="" >
+                        <img src="./assets/img/danhmuc-laptop/phanloai/7.png" alt="">
+                    </a>
+                    <a href="" >
+                        <img src="./assets/img/danhmuc-laptop/phanloai/8.png" alt="">
+                    </a>
+                </div>
+        
+            </div>
+        </div>
+
+        <!-- KẾT THÚC BANNER -->
+
+        <div id="box-common-laptop">
+            <div class="box-common__main">
+                <div class="listproduct">
+                    <div class="listproduct1">
+                        <img src="assets/img/Laptop-Tablet/lenovo-ideapad-3-15itl6-i5-82h80042vn-600x600.jpg" alt="">
+                        <a href="chitietsp-laptop.html">Lenovo IdeaPad 3 15ITL6 i5 1135G7 (82H80042VN)</a>
+                        <span>RAM 8 GB</span>
+                        <span>SSD 512 GB</span>
+                        <h4 style="margin-top: 6px;">Online giá rẻ</h4>
+                        <strong>17.090.000₫đ</strong>
+                        <h4 style="font-size: 15px;text-decoration: line-through;">17.990.000₫ 
+                        <span style="display: inline-block;"> -5%</span></h4>
+                    </div>
+                    <div class="listproduct1">
+                        <img src="assets/img/Laptop-Tablet/hp-340s-g7-i3-224l1pa-302720-092751-600x600.jpg" alt="">
+                        <a href="">HP 340s G7 i3 1005G1 (224L1PA)</a>
+                        <br>
+                        <span>RAM 4 GB</span>
+                        <span>SSD 512 GB</span>
+                        <h4 style="margin-top: 6px;">Online giá rẻ</h4>
+                        <strong>12.890.000₫</strong>
+                        <h4 style="font-size: 15px;text-decoration: line-through;">13.590.000₫ 
+                        <span style="display: inline-block;"> -5%</span></h4>
+                    </div>
+                    <div class="listproduct1">
+                        <img src="assets/img/Laptop-Tablet/acer-aspire-7-a715-42g-r4st-r5-nhqaysv004-16-600x600.jpg" alt="">
+                        <a href="">Acer Aspire 7 A715 42G R4ST R5 5500U</a>
+                        <br>
+                        <span>RAM 4 GB</span>
+                        <span>SSD 256 GB</span>
+                        <h4 style="margin-top: 6px;">Online giá rẻ</h4>
+                        <strong>18.990.000₫</strong>
+                        <h4 style="font-size: 15px;text-decoration: line-through;">19.990.000₫ 
+                        <span style="display: inline-block;"> -5%</span></h4>
+                    </div>
+                    <div class="listproduct1">
+                        <img src="assets/img/Laptop-Tablet/lenovo-ideapad-3-15itl6-i3-82h8004hvn-600x600.jpg" alt="">
+                        <a href="">Lenovo Ideapad 3 15ITL6 i3 1115G4 </a>
+                        <br>
+                        <span>RAM 8 GB</span>
+                        <span>SSD 256 GB</span>
+                        <h4 style="margin-top: 6px;">Online giá rẻ</h4>
+                        <strong>14,240,500₫</strong>
+                        <h4 style="font-size: 15px;text-decoration: line-through;">14.990.000₫
+                        <span style="display: inline-block;"> -5%</span></h4>
+                    </div>
+                    <div class="listproduct1">
+                        <img src="assets/img/danhmuc-laptop/content/lenovo-ideapad-gaming-3-15imh05-i7.jpg" alt="">
+                        <a href="">Lenovo Ideapad Gaming 3 15IMH05 i7</a>
+                        <br>
+                        <span>RAM 8 GB</span>
+                        <span>SSD 256 GB</span>
+                        <h4 style="margin-top: 6px;">Online giá rẻ</h4>
+                        <strong>22.890.000₫</strong>
+                        <h4 style="font-size: 15px;text-decoration: line-through;">26.990.000₫ 
+                        <span style="display: inline-block;"> -15%</span></h4>
+                    </div>
+                </div>
+
+                <div class="listproduct2">
+                    <div class="listproduct1">
+                        <img src="assets/img/danhmuc-laptop/content/hang2/acer-aspire-7-a715-42g-r4st-r5 5500U.jpg" alt="">
+                        <a href="">Acer Aspire 7 A715 42G R4ST R5 5500U</a>
+                        <br>
+                        <span>RAM 8 GB</span>
+                        <span>SSD 256 GB</span>
+                        <h4 style="margin-top: 6px;">Online giá rẻ</h4>
+                        <strong>18.990.000₫đ</strong>
+                        <h4 style="font-size: 15px;text-decoration: line-through;">19.990.000₫ 
+                        <span style="display: inline-block;"> -5%</span></h4>
+                    </div>
+                    <div class="listproduct1">
+                        <img src="assets/img/danhmuc-laptop/content/hang2/lenovo-ideapad-3-15itl6-i3-82h8004hv.jpg" alt="">
+                        <a href="">Lenovo Ideapad 3 15ITL6 i3 1115G4</a>
+                        <br>
+                        <span>RAM 8 GB</span>
+                        <span>SSD 512 GB</span>
+                        <h4 style="margin-top: 6px;">Online giá rẻ</h4>
+                        <strong>14.990.000₫</strong>
+                        <h4 style="font-size: 15px;text-decoration: line-through;">15.550.000₫ 
+                        <span style="display: inline-block;"> -5%</span></h4>
+                    </div>
+                    <div class="listproduct1">
+                        <img src="assets/img/danhmuc-laptop/content/hang2/hp-pavilion-15-eg0007tu-i3-2d9k4pa.jpg" alt="">
+                        <a href="">HP-PAVILION-15-EG0007TU-I3</a>
+                        <br>
+                        <span>RAM 4 GB</span>
+                        <span>SSD 256 GB</span>
+                        <h4 style="margin-top: 6px;">Online giá rẻ</h4>
+                        <strong>14.000.000₫</strong>
+                        <h4 style="font-size: 15px;text-decoration: line-through;">14.990.000₫ 
+                        <span style="display: inline-block;"> -5%</span></h4>
+                    </div>
+                    <div class="listproduct1">
+                        <img src="assets/img/danhmuc-laptop/content/hang2/lenovo-legion-5-15imh05-i7-82au0051vn.jpg" alt="">
+                        <a href="">Lenovo Legion 5 15IMH05 i7 10750H/120Hz </a>
+                        <br>
+                        <span>RAM 8 GB</span>
+                        <span>HĐ 1TB + SSD 256 GB</span>
+                        <h4 style="margin-top: 6px;">Chỉ bán Online</h4>
+                        <strong>25.990.000₫</strong>
+                        <h4 style="font-size: 15px;text-decoration: line-through;">28.990.000₫
+                        <span style="display: inline-block;"> -10%</span></h4>
+                    </div>
+                    <div class="listproduct1">
+                        <img src="assets/img/danhmuc-laptop/content/hang2/lenovo-ideapad-slim-3-15iil05-i3-81we0132vn.jpg" alt="">
+                        <a href="">Lenovo IdeaPad 3 15IIL05 i3 1005G1 </a>
+                        <br>
+                        <span>RAM 4 GB</span>
+                        <span>SSD 512 GB</span>
+                        <h4 style="margin-top: 6px;">Online giá rẻ</h4>
+                        <strong>12.990.000₫</strong>  
+                        <h4 style="font-size: 15px;text-decoration: line-through;">12.990.000₫ 
+                        <span style="display: inline-block;"> -5%</span></h4>
+                    </div>
+                </div>
+
+                <div class="listproduct2">
+                    <div class="listproduct1">
+                        <img src="assets/img/danhmuc-laptop/content/hang3/acer-aspire-7-a715-41g-r150-r7-nhq8ssv004.jpg" alt="">
+                        <a href="chitietsp-laptop.html">Acer Aspire 7 A715 42G R4ST R5 5500U </a>
+                        <br>
+                        <span>RAM 8 GB</span>
+                        <span>SSD 256 GB</span>
+                        <h4 style="margin-top: 6px;">Online giá rẻ</h4>
+                        <strong>18.990.000₫đ</strong>
+                        <h4 style="font-size: 15px;text-decoration: line-through;">19.990.000₫ 
+                        <span style="display: inline-block;"> -5%</span></h4>
+                    </div>
+                    <div class="listproduct1">
+                        <img src="assets/img/danhmuc-laptop/content/hang3/Dell Inspiron 3501.jpg" alt="">
+                        <a href="">Dell Inspiron 3501 i5 1135G7 (P90F005N3501B)</a>
+                        <br>
+                        <span>RAM 4 GB</span>
+                        <span>SSD 512 GB</span>
+                        <h4 style="margin-top: 6px;">Online giá rẻ</h4>
+                        <strong>17.290.000₫</strong>
+                        <h4 style="font-size: 15px;text-decoration: line-through;">18.090.000₫ 
+                        <span style="display: inline-block;"> -5%</span></h4>
+                    </div>
+                    <div class="listproduct1">
+                        <img src="assets/img/danhmuc-laptop/content/hang3/lenovo-ideapad-5-14itl05-i5-82fe00krvn.jpg" alt="">
+                        <a href="">Lenovo IdeaPad 5 14ITL05 i5 1135G7</a>
+                        <br>
+                        <span>RAM 16 GB</span>
+                        <span>SSD 512 GB</span>
+                        <h4 style="margin-top: 6px;">Online giá rẻ</h4>
+                        <strong>19.490.000₫</strong>
+                        <h4 style="font-size: 15px;text-decoration: line-through;">25.000.000₫ 
+                        <span style="display: inline-block;"> -10%</span></h4>
+                    </div>
+                    <div class="listproduct1">
+                        <img src="assets/img/danhmuc-laptop/content/hang3/hp-340s-g7-i3-240q4pa.jpg" alt="">
+                        <a href="">HP 340s G7 i3 1005G1 (240Q4PA)</a>
+                        <br>
+                        <span>RAM 4 GB</span>
+                        <span>SSD 256 GB</span>
+                        <h4 style="margin-top: 6px;">Online giá rẻ</h4>
+                        <strong>11.890.000₫</strong>
+                        <h4 style="font-size: 15px;text-decoration: line-through;">12.590.000₫
+                        <span style="display: inline-block;"> -5%</span></h4>
+                    </div>
+                    <div class="listproduct1">
+                        <img src="assets/img/danhmuc-laptop/content/hang3/lenovo-thinkbook-15iil-i3-20sm00d9vn.jpg" alt="">
+                        <a href=""> Lenovo ThinkBook 15IIL i3 1005G1 (20SM00D9VN)</a>
+                        <br>
+                        <span>RAM 4 GB</span>
+                        <span>SSD 512 GB</span>
+                        <h4 style="margin-top: 6px;">Online giá rẻ</h4>
+                        <strong>11.4900.000₫</strong>
+                        <h4 style="font-size: 15px;text-decoration: line-through;">12.990.000₫ 
+                        <span style="display: inline-block;"> -11%</span></h4>
+                    </div>
+                </div>
+
+                <div class="listproduct2">
+                    <div class="listproduct1">
+                        <img src="assets/img/danhmuc-laptop/content/hang4/msi-gf63-10sc-i5-255v.jpg" alt="">
+                        <a href="">MSI GF63 10SC i5 10300H (255VN)</a>
+                        <br>
+                        <span>RAM 8 GB</span>
+                        <span>SSD 512 GB</span>
+                        <h4 style="margin-top: 6px;">Online giá rẻ</h4>
+                        <strong>29.990.000₫đ</strong>
+                        <h4 style="font-size: 15px;text-decoration: line-through;">35.000.000₫ 
+                        <span style="display: inline-block;"> -15%</span></h4>
+                    </div>
+                    <div class="listproduct1">
+                        <img src="assets/img/danhmuc-laptop/content/hang4/asus vivobook x515ma.jpg" alt="">
+                        <a href="">Asus VivoBook X515MA N4020 (BR111T)</a>
+                        <br>
+                        <span>RAM 4 GB</span>
+                        <span>SSD 256 GB</span>
+                        <h4 style="margin-top: 6px;">Online giá rẻ</h4>
+                        <strong>8.490.000₫</strong>
+                        <h4 style="font-size: 15px;text-decoration: line-through;">13.590.000₫ 
+                        <span style="display: inline-block;"> -10%</span></h4>
+                    </div>
+                    <div class="listproduct1">
+                        <img src="assets/img/danhmuc-laptop/content/hang4/lenovo-thinkbook-15-g2-itl-i5.jpg" alt="">
+                        <a href="">Lenovo ThinkBook 15 G2 ITL i5 1135G7 ...</a>
+                        <br>
+                        <span>RAM 8 GB</span>
+                        <span>SSD 512 GB</span>
+                        <h4 style="margin-top: 6px;">Online giá rẻ</h4>
+                        <strong>17.190.000₫</strong>
+                        <h4 style="font-size: 15px;text-decoration: line-through;">19.990.000₫ 
+                        <span style="display: inline-block;"> -5%</span></h4>
+                    </div>
+                    <div class="listproduct1">
+                        <img src="assets/img/danhmuc-laptop/content/hang4/acer-aspire-7-a715-75g-52s5-i5-nhq85sv002.jpg" alt="">
+                        <a href="">Acer Aspire 7 A715 75G 52S5 i5 9300H ...</a>
+                        <br>
+                        <span>RAM 8 GB</span>
+                        <span>SSD 512 GB</span>
+                        <h4 style="margin-top: 6px;">Online giá rẻ</h4>
+                        <strong>20.990.000₫</strong>
+                        <h4 style="font-size: 15px;text-decoration: line-through;">21.990.000₫
+                        <span style="display: inline-block;"> -5%</span></h4>
+                    </div>
+                    <div class="listproduct1">
+                        <img src="assets/img/danhmuc-laptop/content/hang4/hp-340s-g7-i5-36a35pa.jpg" alt="">
+                        <a href="">HP 340s G7 i5 1035G1 (36A35PA)</a>
+                        <br>
+                        <span>RAM 8 GB</span>
+                        <span>SSD 512 GB</span>
+                        <h4 style="margin-top: 6px;">Online giá rẻ</h4>
+                        <strong>16.690.000₫</strong>
+                        <h4 style="font-size: 15px;text-decoration: line-through;">17.590.000₫ 
+                        <span style="display: inline-block;"> -5%</span></h4>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+        <!-- KẾT THÚC CONTENT -->
+
+        <hr style="width: 1180px;margin-left:160px;margin-top:40px;margin-bottom: 10px;">
+    <div id="footer">
+        <div class="footer-main">
+            <div class="footer-main-1">
+                <ul>
+                    <li>
+                    <a href="">Lịch sử mua hàng</a>
+                    </li>
+                    <li>
+                    <a href="">Cộng tác bán hàng cùng ADMIN</a>
+                    </li>
+                    <li>
+                    <a href="">Tìm hiểu về mua trả góp</a>
+                    </li>
+                    <li>
+                    <a href="">Chính sách bảo hành</a>
+                    </li>
+                    <li>
+                    <a href="">Xem thêm</a>
+                    </li>
+                </ul>   
+            </div>
+            <div class="footer-main-1">
+                <ul>
+                    <li>
+                    <a href="">Giới thiệu công ty (MWG.vn)</a>
+                    </li>
+                    <li>
+                    <a href="">Tuyển dụng</a>
+                    </li>
+                    <li>
+                    <a href="">Gửi góp ý, khiếu nại</a>
+                    </li>
+                    <li>
+                    <a href="">Tìm siêu thị (2.574 shop)</a>
+                    </li>
+                    <li>
+                    <a href="">Xem bản mobile</a>
+                    </li>
+                </ul> 
+            </div>
+            <div class="footer-main-2">
+                <p style="margin-top: 10px;">
+                    <strong>Tổng đài hỗ trợ</strong>
+                    (Miễn phí gọi)
+                </p>
+                <p>
+                    <span>Gọi mua:</span>
+                    <a href=""><b>1800.1060</b></a>
+                    (7:30 - 22:00)
+                </p>
+                <p>
+                    <span>Kỹ thuật:</span>
+                    <a href=""><b>1800.1763</b></a>
+                    (7:30 - 22:00)
+                </p>
+                <p>
+                    <span>Khiếu nại:</span>
+                    <a href=""><b>1800.1062</b></a>
+                    (8:00 - 21:30)
+                </p>
+                <p>
+                    <span>Bảo hành:</span>
+                    <a href=""><b>1800.1064</b></a>
+                    (8:00 - 21:00)
+                </p>
+            </div>
+        </div>
+    </div>
+
+    </div>
+</body>
+</html>
